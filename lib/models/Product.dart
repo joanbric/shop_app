@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shop_app/constants.dart';
 
 class Product {
   final String image, title, description;
@@ -23,7 +24,7 @@ List<Product> products = [
     price: 244,
     size: 12,
     description: dummyText,
-    image: "images/bag_1.png",
+    image: "${ASSETS_HOME}images/bag_1.png",
     color: Color(0xff3d82ae),
   ),
 
@@ -32,7 +33,7 @@ List<Product> products = [
       title: "Red bag for woman",
       description: "A beautiful red bag for a woman",
       price: 750,
-      image: "images/bag_2.png",
+      image: "${ASSETS_HOME}images/bag_2.png",
       size: 13,
       color: Color(0xfff95c8b))
 ];

@@ -24,10 +24,11 @@ class ItemCard extends StatelessWidget {
               // For demo we use fixed height and width
               // New we dont need them
               // width: 160,
-              // height: 180,
+              height: 280,
               padding: EdgeInsets.all(kDefaultPadding),
               decoration: BoxDecoration(
-                  color: product.color, borderRadius: BorderRadius.circular(16)),
+                  color: product.color,
+                  borderRadius: BorderRadius.circular(16)),
               child: Image.asset(product.image),
             ),
           ),
@@ -36,10 +37,13 @@ class ItemCard extends StatelessWidget {
                 top: kDefaultPadding * .5, bottom: kDefaultPadding * 0.2),
             child: Text(
               product.title,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
               style: TextStyle(
-                  color: kTextLightColor,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 16),
+                color: kTextLightColor,
+                fontWeight: FontWeight.bold,
+                fontSize: 16,
+              ),
             ),
           ),
           Text(
